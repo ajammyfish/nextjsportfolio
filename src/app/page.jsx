@@ -21,7 +21,7 @@ export default function Home() {
           <nav className='py-4 md:py-10 mb-12 flex justify-between'>
             <h1 className='text-xl'>James Fisher Web Dev</h1>
             <ul className='flex items-center'>
-              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="/updtresumegdrive.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
             </ul>
           </nav>
 

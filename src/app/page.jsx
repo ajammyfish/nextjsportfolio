@@ -19,7 +19,7 @@ export default function Home() {
         <section className='min-h-screen'>
           
           <nav className='py-4 md:py-10 mb-12 flex justify-between'>
-            <h1 className='text-xl'>James Fisher Web Dev</h1>
+            <h1 className='text-xl'>James Fisher - Web Developer</h1>
             <ul className='flex items-center'>
               <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
             </ul>
@@ -32,7 +32,7 @@ export default function Home() {
               transition={{ duration: 1 }}
             >
               <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>James Fisher</h2>
-              <h3 className='text-2xl py-2 md:text-3xl font-medium'>
+              <h3 className='text-2xl py-2 md:text-3xl font-medium mb-10'>
                 <Typewriter
                   options={{
                     strings: ['Full Stack Developer', 'Problem Solver', 'Continuous Learner'],
@@ -48,11 +48,7 @@ export default function Home() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, delay:0.5 }}
             >
-              <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto'>
-                Passionate Developer with a history in <span className='text-teal-500'>business and teaching</span>, seeking my 
-                first position in software development.
-              </p>
-              <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto'>
+              <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto mb-10'>
                 With a strong foundation in <span className='text-teal-500'>full-stack development
                 </span>, I'm ready and eager to contribute my skills 
                 to a dynamic team, and further my knowledge in the process.
@@ -105,15 +101,17 @@ export default function Home() {
             >
               <div className='text-center shadow-lg p-10 rounded-xl my-10'>
                 <Image src={design} width={100} height={100} className='m-auto' />
-                <h3 className='text-lg font-medium pt-8 pb-2'>Front-End</h3>
+                <h3 className='text-lg font-medium pt-8 pb-2 underline'>Front-End Design and Development</h3>
                 <p className='py-2'>
-                  Combining a range of tools and libraries to create responsive, modern, 
-                  elegant websites.
+                  I combine a range of tools and libraries to create responsive, modern, 
+                  elegant user interfaces.
                 </p>
-                <h4 className='py-4 text-teal-600'>Technologies I use</h4>
-                <p className='text-gray-800 py-1'>React</p>
-                <p className='text-gray-800 py-1'>Next JS</p>
-                <p className='text-gray-800 py-1'>Bootstrap</p>
+                <h4 className='py-4 text-teal-600 font-bold'>Main Technologies:</h4>
+                <li className='text-gray-800 py-1'>HTML/CSS</li>
+                <li className='text-gray-800 py-1'>JavaScript</li>
+                <li className='text-gray-800 py-1'>React</li>
+                <li className='text-gray-800 py-1'>Next JS</li>
+                <li className='text-gray-800 py-1'>Tailwind CSS</li>
               </div>
             </motion.div>
             <motion.div
@@ -124,14 +122,15 @@ export default function Home() {
             >
               <div className='text-center shadow-lg p-10 rounded-xl my-10'>
                 <Image src={code} width={100} height={100} className='m-auto' />
-                <h3 className='text-lg font-medium pt-8 pb-2'>Back-End</h3>
+                <h3 className='text-lg font-medium pt-8 pb-2 underline'>Back-End Development</h3>
                 <p className='py-2'>
-                  Creating secure and well structured server side code.
+                  Creating secure, well-structured, efficient server side code.
                 </p>
-                <h4 className='py-4 text-teal-600'>Technologies I use</h4>
-                <p className='text-gray-800 py-1'>Django</p>
-                <p className='text-gray-800 py-1'>Django REST framework</p>
-                <p className='text-gray-800 py-1'>Flask</p>
+                <h4 className='py-4 text-teal-600 font-bold'>Main Technologies:</h4>
+                <li className='text-gray-800 py-1'>Django</li>
+                <li className='text-gray-800 py-1'>Django REST Framework</li>
+                <li className='text-gray-800 py-1'>Flask</li>
+                <li className='text-gray-800 py-1'>SQL</li>
               </div>
             </motion.div>
             <motion.div
@@ -142,7 +141,7 @@ export default function Home() {
             >
               <div className='text-center shadow-lg p-10 rounded-xl my-10'>
                 <Image src={consulting} width={100} height={100} className='m-auto' />
-                <h3 className='text-lg font-medium pt-8 pb-2'>Problem Solving</h3>
+                <h3 className='text-lg font-medium pt-8 pb-2 underline'>Problem Solving</h3>
                 <p className='py-2'>
                   Developing effective solutions to complex problems.
                 </p>
@@ -160,6 +159,30 @@ export default function Home() {
             </p>
           </div>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg: flex-wrap'>
+
+
+            <div className='basis-1/3 flex-1 relative'>
+              <a href="https://vtsolutions.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <Image src={volt} className='rounded-lg object-cover' style={{layout: 'responsive'}} width={'100%'} height={'100%'} />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100">
+                  <div className="bg-black bg-opacity-75 rounded-full px-6 py-3">
+                    <p className="text-white text-center font-medium">View Site</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div className='basis-1/3 flex-1 relative'>
+              <a href="https://github.com/ajammyfish/serviceTrackrApp" target="_blank" rel="noopener noreferrer">
+                <Image src={planner} className='rounded-lg object-cover' style={{layout: 'responsive'}} width={'100%'} height={'100%'} />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100">
+                  <div className="bg-black bg-opacity-75 rounded-full px-6 py-3">
+                    <p className="text-white text-center font-medium">View Code</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
             <div className='basis-1/3 flex-1 relative'>
               <a href="https://windowcleaningdorset.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <Image src={jdpc} className='rounded-lg object-cover' style={{layout: 'responsive'}} width={'100%'} height={'100%'} />
@@ -170,32 +193,13 @@ export default function Home() {
                 </div>
               </a>
             </div>
+
             <div className='basis-1/3 flex-1 relative'>
               <a href="https://ajammyfish.github.io/iasip/" target="_blank" rel="noopener noreferrer">
                 <Image src={iasip} className='rounded-lg object-cover' style={{layout: 'responsive'}} width={'100%'} height={'100%'} />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100">
                   <div className="bg-black bg-opacity-75 rounded-full px-6 py-3">
                     <p className="text-white text-center font-medium">View Site</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div className='basis-1/3 flex-1 relative'>
-              <a href="https://github.com/ajammyfish" target="_blank" rel="noopener noreferrer">
-                <Image src={volt} className='rounded-lg object-cover' style={{layout: 'responsive'}} width={'100%'} height={'100%'} />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100">
-                  <div className="bg-black bg-opacity-75 rounded-full px-6 py-3">
-                    <p className="text-white text-center font-medium">View Code</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div className='basis-1/3 flex-1 relative'>
-              <a href="https://github.com/ajammyfish" target="_blank" rel="noopener noreferrer">
-                <Image src={planner} className='rounded-lg object-cover' style={{layout: 'responsive'}} width={'100%'} height={'100%'} />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100">
-                  <div className="bg-black bg-opacity-75 rounded-full px-6 py-3">
-                    <p className="text-white text-center font-medium">View Code</p>
                   </div>
                 </div>
               </a>
